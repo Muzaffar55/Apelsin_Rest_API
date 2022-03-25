@@ -1,0 +1,30 @@
+### Get All
+GET http://localhost:80/api/customer
+
+### ADD
+POST http://localhost:80/api/customer
+Content-Type: application/json
+
+{
+  "country":  "UK",
+  "address":  "London",
+  "name":  "Bean",
+  "phone":  "+253648879665"
+}
+
+### Get One
+GET http://localhost:80/api/customer/2
+
+### Edit
+PUT http://localhost:80/api/customer/1
+Content-Type: application/json
+
+{
+  "country":  "USA",
+  "address":  "Samarqand",
+  "name":  "Jack",
+  "phone":  "+998914506197"
+}
+
+### Delete
+DELETE http://localhost:80/api/customer/1
